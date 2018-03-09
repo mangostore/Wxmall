@@ -1,6 +1,6 @@
-# v-wxmall
+# Wxmall
 
-> wxmall create by vue
+> a wechat mall created by vue
 
 ## Build Setup
 
