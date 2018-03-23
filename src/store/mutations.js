@@ -19,5 +19,8 @@ export default {
     state.userInfo = null
     setStore('login', false)
     setStore('userInfo', null)
+  },
+  RECORD_SHOPINFO (state, shopInfo) {
+    state.shopInfo = shopInfo
   }
 }

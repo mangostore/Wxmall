@@ -179,6 +179,10 @@
     background-color: $color-background;
   }
 
+  html>body {
+    font-size: 12px;
+  }
+
   .mine-view {
     padding-bottom: 80px;
   }

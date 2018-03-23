@@ -309,3 +309,53 @@ export const orderPay = (context, ordersId, payStyle, realPay, password) => fetc
 export const paySuccess = (context, ordersId) => fetch(context, '/Handler/OrderConfirmHandler.ashx?Action=Pay_Success', {
   orders_ID: ordersId
 })
+
+/**
+ * 商铺信息
+ */
+export const shopInfo = (context, shopId) => fetch(context, '/Handler/ShopHome.ashx?Action=ShopInfo', {
+  ShopID: shopId
+})
+
+/**
+ * 收藏店铺
+ */
+export const shopCollect = (context, shopId, state) => fetch(context, '/Handler/ShopHome.ashx?Action=ShopCollect', {
+  ShopID: shopId,
+  State: state
+})
+
+/**
+ * 商铺首页
+ */
+export const shopRecom = (context, shopId) => fetch(context, '/Handler/ShopHome.ashx?Action=ShopRecom', {
+  ShopID: shopId,
+  PageIndex: 1,
+  PageSize: 999
+})
+
+/**
+ * 全部商品
+ */
+export const shopProductList = (context, shopId, type, order, page) => fetch(context, '/Handler/ShopHome.ashx?Action=ShopProd', {
+  ShopID: shopId,
+  SelectType: type,
+  Order: order,
+  PageIndex: page,
+  pageSize: 10
+})
+
+/**
+ * 商铺分类
+ */
+export const shopCate = (context, shopId) => fetch(context, '/Handler/ShopHome.ashx?Action=ShopCate', {
+  ShopID: shopId
+})
+
+/**
+ * 购物车列表
+ */
+export const cartList = (context) => fetch(context, '/Handler/CartHandler.ashx?Action=CartList', {
+  pageIndex: 1,
+  pageSize: 99
+})

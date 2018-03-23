@@ -1,7 +1,7 @@
 <template>
   <div class="list-view" v-title="'商品列表'">
     <cube-drawer :show.sync="filterShow" show-mode="push" placement="right" :drawer-style="{width: '90%', background: '#fff'}">
-      <cube-scroll :data="list" :options="{pullUpLoad: {threshold: 0, txt: {more: '加载更多', noMore: '— 到底了，别再拉了 —'}}}" @pulling-up="getNextPageData" ref="scroll">
+      <cube-scroll :data="list" :options="{pullUpLoad: {threshold: 0, txt: {more: '', noMore: '— 到底了，别再拉了 —'}}}" @pulling-up="getNextPageData" ref="scroll">
         <div class="list-top border-bottom-1px">
           <cube-search placeholder="请输入商品名称" v-model="searchValue" @focus="toSearchPage"/>
           <div class="list-top-type" @click="typeChange">

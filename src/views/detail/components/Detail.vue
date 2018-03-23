@@ -93,7 +93,7 @@
         </div>
         <div class="detail-shop-btns">
           <a class="detail-shop-btn" :href="'tel:' + productDetail.ShopPhone">联系供应商</a>
-          <a class="detail-shop-btn" :href="'./shop.html?id=' + productDetail.ShopsID">进入店铺</a>
+          <a class="detail-shop-btn" :href="'./shop.html#/?id=' + productDetail.ShopsID">进入店铺</a>
         </div>
       </section>
 
@@ -122,7 +122,7 @@
           </a>
         </li>
         <li class="detail-bottom-link">
-          <a :href="'./shop.html?id=' + productDetail.ShopsID">
+          <a :href="'./shop.html#/?id=' + productDetail.ShopsID">
             <i class="iconfont icon-dianpu"></i>
             <div class="detail-bottom-label">店铺</div>
           </a>
@@ -525,12 +525,13 @@
     }
     &-title {
       position: relative;
-      height: 46px;
+      height: 42px;
       overflow: hidden;
       font-size: 18px;
       font-weight: 400;
       line-height: 1.2;
       padding-right: 50px;
+      margin-bottom: 4px;
     }
     &-favorite {
       position: absolute;

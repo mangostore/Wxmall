@@ -11,7 +11,8 @@ const state = {
   login: getStore('login') === 'true' || false,
   userInfo: JSON.parse(getStore('userInfo')),
   favorites: JSON.parse(getStore('favorites')),
-  orders: null
+  orders: null,
+  shopInfo: {}
 }
 
 export default new Vuex.Store({

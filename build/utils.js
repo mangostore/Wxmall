@@ -114,5 +114,4 @@ glob.sync(pattern, {nodir: true}).forEach(function (entry) {
     entries[pathname] = entry
   }
 })
-console.log(entries)
 exports.entries = entries

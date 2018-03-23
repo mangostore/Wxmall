@@ -15,6 +15,7 @@
         "better-scroll": "^1.8.4",
         "cube-ui": "^1.6.0",
         "fastclick": "^1.0.6",
+        "lodash": "^4.17.5",
         "photoswipe": "^4.1.2",
         "v-img": "^0.2.0",
         "vue": "^2.5.13",

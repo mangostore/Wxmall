@@ -17,6 +17,9 @@
     height: 100%;
     background-color: $color-background;
   }
+  html>body {
+    font-size: 12px;
+  }
   .router-fade-enter-active, .router-fade-leave-active {
     transition: opacity .3s;
   }
